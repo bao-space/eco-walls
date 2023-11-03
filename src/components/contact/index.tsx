@@ -1,8 +1,14 @@
 import "./styles.css"
+import {
+  AiOutlineInstagram,
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiOutlineTwitter,
+} from "react-icons/ai"
 
 export function Contact() {
   return (
-    <footer className="contact-container">
+    <div className="contact-container">
       <div className="contact-items-container">
         <div className="contact-us">
           <h3>Entre em contato</h3>
@@ -23,13 +29,23 @@ export function Contact() {
             Ipsum simply dummy text of the printing{" "}
           </p>
           <div className="media-container">
-            <div>Insta</div>
-            <div>Face</div>
-            <div>Linkedin</div>
-            <div>Twitter</div>
+            <div>
+              <AiOutlineInstagram size="2rem" />
+            </div>
+            <div>
+              <AiFillFacebook size="2rem" />
+            </div>
+            <div>
+              <AiFillLinkedin size="2rem" />
+            </div>
+            <div>
+              <AiOutlineTwitter size="2rem" />
+            </div>
           </div>
         </div>
         <div className="owners">
+          <h3>Idealizadores</h3>
+
           <h4>Beatriz Alves Fernandes da Cruz</h4>
           <h4>Janaina Bernardo Alves</h4>
           <h4>Juliano Vilardi Gavoçi Tenente Prendi</h4>
@@ -39,6 +55,6 @@ export function Contact() {
           <h4>Wanessa Vicher da Silva</h4>
         </div>
       </div>
-    </footer>
+    </div>
   )
 }
