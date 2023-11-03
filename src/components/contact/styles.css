@@ -1,0 +1,125 @@
+.contact-container {
+  height: 332px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-items-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us {
+  width: 285px;
+  text-align: right;
+  padding-right: 51px;
+}
+
+.contact-us > h3 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 2rem;
+}
+
+.contact-us > h4 {
+  color: #525c60;
+  text-align: right;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 165%; /* 29.7px */
+}
+
+.contact-us > h5 {
+  color: #525c60;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+
+  margin-bottom: 1rem;
+}
+
+.about-company {
+  height: 100%;
+  width: 543px;
+
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 41px;
+}
+
+.about-company > h3 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 23px;
+}
+
+.about-company > p {
+  color: #525c60;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; /* 29.772px */
+  margin-bottom: 50px;
+}
+
+.owners {
+  width: 285px;
+  text-align: left;
+  padding-left: 51px;
+}
+
+.owners > h3 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 2rem;
+}
+
+.owners > h4 {
+  color: #525c60;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 165%; /* 29.7px */
+}
+
+.owners > h5 {
+  color: #525c60;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+
+  margin-bottom: 1rem;
+}

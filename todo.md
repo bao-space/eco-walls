@@ -19,7 +19,6 @@ No passo 5 o botão deve deixar de ser opaco e se tornar clicável
 Abas: 
 
  - Home
-  - Contatos
   
  - Produto
  
