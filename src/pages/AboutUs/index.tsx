@@ -1,7 +1,12 @@
+import "./styles.css"
+import BannerImg from "../../assets/about-us-banner.png"
+import { Banner } from "../../components/banner"
+
 export function AboutUs() {
   return (
-    <div>
+    <section className="about-us-container">
+      <Banner backgroundImg={BannerImg} />
       <div>About Us</div>
-    </div>
+    </section>
   )
 }

@@ -1,5 +1,7 @@
 .navbar-container {
-  padding: 69px 162px;
+  width: 100%;
+  padding: 30px 162px;
+  background: var(--main-blue-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +29,7 @@
 }
 
 .link-container > * {
-  color: #274c5b;
+  color: var(--grey-light);
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;

@@ -1,5 +1,6 @@
 import "./styles.css"
 import { NavLink } from "react-router-dom"
+import Logo from "../../assets/logo_ecowalls.png"
 
 export function Navbar() {
   const links = [
@@ -12,7 +13,9 @@ export function Navbar() {
   return (
     <div className="navbar-container">
       <div className="links-container">
-        <div className="logo">Eco wall</div>
+        <div className="logo">
+          <img src={Logo} alt="logo" width="100px" />
+        </div>
 
         <nav className="link-container">
           {links.map((link) => (

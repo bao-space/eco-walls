@@ -3,8 +3,9 @@ import {
   AiOutlineInstagram,
   AiFillFacebook,
   AiFillLinkedin,
-  AiOutlineTwitter,
 } from "react-icons/ai"
+
+import { RiTwitterXFill } from "react-icons/ri"
 
 export function Contact() {
   return (
@@ -41,7 +42,7 @@ export function Contact() {
               <AiFillLinkedin size="2rem" />
             </div>
             <div>
-              <AiOutlineTwitter size="2rem" />
+              <RiTwitterXFill size="2rem" />
             </div>
           </div>
         </div>
