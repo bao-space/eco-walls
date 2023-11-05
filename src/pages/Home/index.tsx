@@ -1,7 +1,11 @@
+import "./styles.css"
+
 export function Home() {
   return (
-    <div>
-      <div>Home</div>
-    </div>
+    <section className="home-container">
+      <div className="welcome-bunner">
+        <div></div>
+      </div>
+    </section>
   )
 }

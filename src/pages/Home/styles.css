@@ -1,0 +1,9 @@
+.welcome-bunner {
+  width: 100vw;
+  height: 1080px;
+  background-image: url("../../assets/jardim-vertical.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -14,10 +14,10 @@ export function Contact() {
           <h3>Entre em contato</h3>
 
           <h4>Email</h4>
-          <h5>prendi@banana.com</h5>
+          <h5>ecowalls@gmail.com </h5>
 
           <h4>Phone</h4>
-          <h5>4002 8922</h5>
+          <h5>61 0000-0000</h5>
 
           <h4>Endereço</h4>
           <h5> UNB - Universidade de Brasilia </h5>
@@ -25,8 +25,10 @@ export function Contact() {
         <div className="about-company">
           <h3>Eco Wall</h3>
           <p>
-            Simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum simply dummy text of the printing{" "}
+            Empresa é especializada em hortas verticais estabelecendo jardins em
+            ambientes diversos com diferentes espaços e necessidades, entregando
+            ao consumidor um cultivo diverso de vegetais, ervas e plantas
+            ornamentais.
           </p>
           <div className="media-container">
             <div>

@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 8rem;
 }
 
 .contact-items-container {
@@ -159,6 +160,8 @@
   color: #274c5b;
 }
 
-.media-container > *:hover {
+.media-container > div:hover {
+  background: #dbe4de;
+  transition: 0.3s;
   cursor: pointer;
 }
