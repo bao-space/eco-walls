@@ -8,10 +8,10 @@ import Cebolinha from "../../../assets/Cebolinha.png"
 import Cenoura from "../../../assets/Cenoura.png"
 import Coentro from "../../../assets/Coentro.png"
 import Espinafre from "../../../assets/Espinafre.png"
-import Hortela from "../../../assets/Hortelã.png"
+import Hortela from "../../../assets/Hortela.png"
 import Lavanda from "../../../assets/Lavanda.png"
-import Manjericao from "../../../assets/Manjericão.png"
-import Oregano from "../../../assets/Orégano.png"
+import Manjericao from "../../../assets/Manjericao.png"
+import Oregano from "../../../assets/Oregano.png"
 import Pimenta from "../../../assets/Espinafre.png"
 import Salsa from "../../../assets/Salsa.png"
 import Tomate from "../../../assets/Tomate cereja.png"
@@ -27,11 +27,15 @@ export function Product({ name, price }: ProductProps) {
 
   return (
     <div className="item-container">
+      <div className="promo-input">Oferta</div>
+
       <img src={path} alt="" width={"300px"} />
 
       <div className="product-container">
         <h3>{name}</h3>
-        <h4>{price}</h4>
+        <div className="price-container">
+          <h4>{price}</h4>
+        </div>
       </div>
     </div>
   )
