@@ -1,0 +1,16 @@
+.item-container {
+  width: 335px;
+  height: 483px;
+  flex-shrink: 0;
+
+  border-radius: 30px;
+
+  margin-left: 10px;
+  margin-bottom: 40px;
+
+  background: var(--grey-white);
+}
+
+img {
+  mix-blend-mode: multiply;
+}

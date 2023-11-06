@@ -1,2 +1,96 @@
 .about-us-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  max-width: var(--max-width);
+}
+
+.who-we-are {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+}
+
+.who-we-are > h3 {
+  color: var(--main-blue-dark);
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
+  margin-bottom: 20px;
+}
+
+.who-we-are > h4 {
+  color: #525c60;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%;
+}
+
+.mission-container {
+  padding: 80px 0;
+  background: var(--main-blue-dark);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.mission-container > h3 {
+  color: var(--main-yellow-medium);
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.mission-container > div {
+  display: flex;
+  margin-top: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: calc(var(--max-width) - 30%);
+}
+
+.mission-container > div > span {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mission-container > div > span > h4 {
+  color: var(--main-yellow-medium);
+  margin-bottom: 20px;
+  font-family: cursive;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.mission-container > div > span > p {
+  color: var(--grey-light);
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }

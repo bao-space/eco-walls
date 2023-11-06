@@ -24,7 +24,7 @@ export function Contact() {
           <h5> UNB - Universidade de Brasilia </h5>
         </div>
         <div className="about-company">
-          <h3>Eco Wall</h3>
+          <h3>Eco Walls</h3>
           <p>
             Empresa é especializada em hortas verticais estabelecendo jardins em
             ambientes diversos com diferentes espaços e necessidades, entregando

@@ -1,6 +1,20 @@
 .banner-container {
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--main-blue-dark);
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
+  margin-bottom: 20px;
 }

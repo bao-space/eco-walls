@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <div className="footer-container">
       <p>
-        Copyright © {currentYear} <strong>Bão Space</strong> | Eco Wall{" "}
+        Copyright © {currentYear} <strong>Bão Space</strong> | Eco Walls
       </p>
     </div>
   )
