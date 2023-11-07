@@ -17,7 +17,8 @@ export function Shop() {
           <Product
             name={product.name}
             price={product.price}
-            key={product.name}
+            id={product.id}
+            key={product.id}
           />
         ))}
       </div>

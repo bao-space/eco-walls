@@ -1,6 +1,9 @@
 import "./styles.css"
 import { NavLink } from "react-router-dom"
 import Logo from "../../assets/logo_ecowalls.png"
+import { AiOutlineShoppingCart } from "react-icons/ai"
+import { useContext, useEffect, useState } from "react"
+import { ShoppingCartContext } from "../../context/ShoppingCartContext"
 
 export function Navbar() {
   const links = [
@@ -9,6 +12,18 @@ export function Navbar() {
     { name: "Vendas", path: "/shop" },
     { name: "Sobre nós", path: "/about-us" },
   ]
+
+  const [itemsInCart, setItemsInCart] = useState(0)
+
+  const { cartItems } = useContext(ShoppingCartContext)
+
+  useEffect(() => {
+    const totalItemsInCart = cartItems.reduce((acc, item) => {
+      return acc + item.quantity
+    }, 0)
+
+    setItemsInCart(totalItemsInCart)
+  }, [cartItems])
 
   return (
     <>
@@ -25,6 +40,13 @@ export function Navbar() {
               </NavLink>
             ))}
           </nav>
+
+          <div className="shop-cart-container">
+            <div className="shop-cart">
+              <AiOutlineShoppingCart size={27} />
+            </div>
+            <p>Carrinho ({itemsInCart})</p>
+          </div>
         </div>
       </div>
       <div className="ghost-container" />

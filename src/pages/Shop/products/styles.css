@@ -78,7 +78,7 @@ img {
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .price-container > div > span {
@@ -95,10 +95,53 @@ img {
 }
 
 .price-container > div > h4 {
-  color: #274c5b;
+  color: var(--main-blue-dark);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.count-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: inline-flex;
+  height: 34px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.count-container > p {
+  margin-left: 4px;
+  margin-right: 4px;
+
+  color: var(--main-green-medium);
+  text-align: center;
+
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.count-container > button {
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.count-container > button > svg {
+  color: var(--main-green-medium);
+}
+.count-container > button > svg:hover {
+  filter: brightness(10%);
 }

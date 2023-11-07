@@ -17,16 +17,33 @@ import Salsa from "../../../assets/Salsa.png"
 import Tomate from "../../../assets/Tomate cereja.png"
 import Tomilho from "../../../assets/Tomilho.png"
 
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai"
+import { useContext } from "react"
+import { ShoppingCartContext } from "../../../context/ShoppingCartContext"
 type ProductProps = {
   name: string
   price: number
+  id: number
 }
 
-export function Product({ name, price }: ProductProps) {
+export function Product({ name, price, id }: ProductProps) {
   const path = getPath(name)
 
   const value = formatAsCurrency(price)
   const oldValue = formatAsCurrency(price + 1)
+
+  const { addProductToShoppingCart, removeProductFromShoppingCart, cartItems } =
+    useContext(ShoppingCartContext)
+
+  const item = cartItems.find((item) => item.id == id)
+
+  function countAdd() {
+    addProductToShoppingCart(id)
+  }
+
+  function countRemove() {
+    removeProductFromShoppingCart(id)
+  }
 
   return (
     <div className="item-container">
@@ -41,6 +58,15 @@ export function Product({ name, price }: ProductProps) {
             <span>{oldValue}</span>
 
             <h4>{value}</h4>
+          </div>
+          <div className="count-container">
+            <button type="button">
+              <AiOutlineMinus size={18} weight="bold" onClick={countRemove} />
+            </button>
+            <p>{item?.quantity || 0}</p>
+            <button type="button">
+              <AiOutlinePlus size={18} weight="bold" onClick={countAdd} />
+            </button>
           </div>
         </div>
       </div>
