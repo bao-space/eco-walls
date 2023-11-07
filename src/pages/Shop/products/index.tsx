@@ -19,22 +19,29 @@ import Tomilho from "../../../assets/Tomilho.png"
 
 type ProductProps = {
   name: string
-  price: string
+  price: number
 }
 
 export function Product({ name, price }: ProductProps) {
   const path = getPath(name)
 
+  const value = formatAsCurrency(price)
+  const oldValue = formatAsCurrency(price + 1)
+
   return (
     <div className="item-container">
       <div className="promo-input">Oferta</div>
 
-      <img src={path} alt="" width={"300px"} />
+      <img src={path} alt="" width={"400px"} />
 
       <div className="product-container">
         <h3>{name}</h3>
         <div className="price-container">
-          <h4>{price}</h4>
+          <div>
+            <span>{oldValue}</span>
+
+            <h4>{value}</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -94,4 +101,11 @@ function getPath(name: string) {
     default:
       "Acelga"
   }
+}
+
+function formatAsCurrency(number: number) {
+  return number.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  })
 }

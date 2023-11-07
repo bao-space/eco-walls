@@ -1,66 +1,66 @@
 export const products = [
   {
     name: "Acelga",
-    price: "R$ 5,00",
+    price: 5,
   },
   {
     name: "Alecrim",
-    price: "R$ 4,00",
+    price: 4,
   },
   {
     name: "Alface",
-    price: "R$ 4,00",
+    price: 4,
   },
   {
     name: "Beterraba",
-    price: "R$ 5,00",
+    price: 5,
   },
   {
     name: "Cebolinha",
-    price: "R$ 4,00",
+    price: 4,
   },
   {
     name: "Cenoura",
-    price: "R$ 5,00",
+    price: 5,
   },
   {
     name: "Coentro",
-    price: "R$ 4,00",
+    price: 4,
   },
   {
     name: "Espinafre",
-    price: "R$ 5,00",
+    price: 5,
   },
   {
     name: "Hortelã",
-    price: "R$ 6,00",
+    price: 6,
   },
   {
     name: "Lavanda",
-    price: "R$ 6,00",
+    price: 6,
   },
   {
     name: "Manjericão",
-    price: "R$ 4,00",
+    price: 4,
   },
   {
     name: "Orégano",
-    price: "R$ 4,00",
+    price: 4,
   },
   {
     name: "Pimenta",
-    price: "R$ 6,00",
+    price: 6,
   },
   {
     name: "Salsa",
-    price: "R$ 4,00",
+    price: 4,
   },
   {
     name: "Tomate Cereja",
-    price: "R$ 6,00",
+    price: 6,
   },
   {
     name: "Tomilho",
-    price: "R$ 5,00",
+    price: 5,
   },
 ]

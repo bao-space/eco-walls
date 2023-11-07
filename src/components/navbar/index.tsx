@@ -11,20 +11,23 @@ export function Navbar() {
   ]
 
   return (
-    <div className="navbar-container">
-      <div className="links-container">
-        <div className="logo">
-          <img src={Logo} alt="logo" width="100px" />
-        </div>
+    <>
+      <div className="navbar-container">
+        <div className="links-container">
+          <div className="logo">
+            <img src={Logo} alt="logo" width="100px" />
+          </div>
 
-        <nav className="link-container">
-          {links.map((link) => (
-            <NavLink key={link.name} to={link.path}>
-              <p>{link.name}</p>
-            </NavLink>
-          ))}
-        </nav>
+          <nav className="link-container">
+            {links.map((link) => (
+              <NavLink key={link.name} to={link.path}>
+                <p>{link.name}</p>
+              </NavLink>
+            ))}
+          </nav>
+        </div>
       </div>
-    </div>
+      <div className="ghost-container" />
+    </>
   )
 }

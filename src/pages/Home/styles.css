@@ -1,6 +1,9 @@
 .welcome-banner {
   height: 700px;
-  background-image: url("../../assets/jardim-vertical.jpg");
+  background-image: url("../../assets/background.png");
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 
   background-repeat: no-repeat;
   background-size: cover;
