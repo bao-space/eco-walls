@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Roboto:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --main-bg: #eff6f1;
   --main-blue-dark: #274c5b;
+  --light-blue: rgb(165, 192, 196);
   --main-green-medium: #7eb693;
   --main-yellow-medium: #efd372;
   --main-yellow-light: #efe2b0;
@@ -18,4 +22,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: rgb(249, 249, 249);
 }

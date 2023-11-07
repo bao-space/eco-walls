@@ -122,7 +122,7 @@ img {
   margin-left: 4px;
   margin-right: 4px;
 
-  color: var(--main-green-medium);
+  color: var(--light-blue);
   text-align: center;
 
   font-family: "Roboto";
@@ -140,8 +140,8 @@ img {
 }
 
 .count-container > button > svg {
-  color: var(--main-green-medium);
+  color: var(--light-blue);
 }
 .count-container > button > svg:hover {
-  filter: brightness(10%);
+  filter: brightness(80%);
 }
