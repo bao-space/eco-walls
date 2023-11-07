@@ -5,7 +5,7 @@ import { Router } from "./router"
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.DEV ? "/" : "/eco-walls/"}>
         <Router />
       </BrowserRouter>
     </>
