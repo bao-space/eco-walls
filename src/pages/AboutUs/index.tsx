@@ -43,8 +43,8 @@ export function AboutUs() {
           <span>
             <h4>Valores</h4>
             <p>
-              Se tornar a empresa referência em hortas verticais no Distrito
-              Federal
+              Respeito, ética, responsabilidade, qualidade nos serviços
+              prestados, qualidade de vida e saúde.
             </p>
           </span>
         </div>

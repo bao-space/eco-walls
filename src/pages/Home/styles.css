@@ -2,8 +2,8 @@
   height: 700px;
   background-image: url("../../assets/background.png");
 
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 
   background-repeat: no-repeat;
   background-size: cover;

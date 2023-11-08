@@ -1,0 +1,8 @@
+.service-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

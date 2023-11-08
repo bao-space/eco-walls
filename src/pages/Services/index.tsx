@@ -1,6 +1,8 @@
+import "./styles.css"
+
 export function Services() {
   return (
-    <section>
+    <section className="service-container">
       <form>
         <div className="grid gap-6 mb-6 md:grid-cols-2">
           <div>
@@ -171,6 +173,7 @@ export function Services() {
           Submit
         </button>
       </form>
+      <div>banner</div>
     </section>
   )
 }
