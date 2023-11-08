@@ -1,4 +1,6 @@
 .contact-container {
+  border-top: 1px solid var(--grey-light);
+  padding-top: 60px;
   height: 372px;
   display: flex;
   align-items: center;
@@ -28,7 +30,7 @@
 }
 
 .contact-us > h3 {
-  color: var(--main-blue-dark);
+  color: var(--grey-dark);
   font-family: Roboto;
   font-size: 30px;
   font-style: normal;
@@ -74,7 +76,7 @@
 }
 
 .about-company > h3 {
-  color: var(--main-blue-dark);
+  color: var(--grey-dark);
   font-family: Roboto;
   font-size: 38px;
   font-style: normal;
@@ -106,7 +108,7 @@
 }
 
 .owners > h3 {
-  color: var(--main-blue-dark);
+  color: var(--grey-dark);
   font-family: Roboto;
   font-size: 30px;
   font-style: normal;
@@ -157,7 +159,7 @@
 }
 
 .media-container > div > * {
-  color: var(--main-blue-dark);
+  color: var(--grey-dark);
 }
 
 .media-container > div:hover {

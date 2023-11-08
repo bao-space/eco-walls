@@ -41,7 +41,7 @@
 }
 
 .link-container > * {
-  color: var(--main-blue-dark);
+  color: var(--grey-dark);
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
@@ -55,7 +55,7 @@
 }
 
 .link-container > *:hover {
-  color: var(--light-blue);
+  color: var(--secondary-color);
   transition: 0.3s;
 }
 
@@ -80,22 +80,21 @@
 .shop-cart {
   height: 46px;
   width: 46px;
-  background-color: var(--main-blue-dark);
 
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
 
-  margin-right: 12px;
+  margin-right: 4px;
 }
 
 .shop-cart > * {
-  color: #e0e0e0;
+  color: var(--secondary-color);
 }
 
 .shop-cart-container > p {
-  color: #274c5b;
+  color: var(--secondary-color);
   font-family: Roboto;
   font-size: 0.8rem;
   font-style: normal;

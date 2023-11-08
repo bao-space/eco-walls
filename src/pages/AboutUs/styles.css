@@ -20,7 +20,7 @@
 }
 
 .who-we-are > h3 {
-  color: var(--main-blue-dark);
+  color: var(--grey-dark);
   font-family: Roboto;
   font-size: 50px;
   font-style: normal;
@@ -41,7 +41,7 @@
 
 .mission-container {
   padding: 80px 0;
-  background: var(--main-blue-dark);
+  background: var(--grey-dark);
 
   display: flex;
   align-items: center;

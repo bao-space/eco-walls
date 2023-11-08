@@ -39,7 +39,7 @@ img {
   width: 60px;
 
   border-radius: 8px;
-  background: var(--main-blue-dark);
+  background: var(--grey-dark);
 
   display: flex;
   align-items: center;
@@ -95,7 +95,7 @@ img {
 }
 
 .price-container > div > h4 {
-  color: var(--main-blue-dark);
+  color: var(--grey-dark);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -122,7 +122,7 @@ img {
   margin-left: 4px;
   margin-right: 4px;
 
-  color: var(--light-blue);
+  color: var(--secondary-color);
   text-align: center;
 
   font-family: "Roboto";
@@ -140,7 +140,7 @@ img {
 }
 
 .count-container > button > svg {
-  color: var(--light-blue);
+  color: var(--secondary-color);
 }
 .count-container > button > svg:hover {
   filter: brightness(80%);
