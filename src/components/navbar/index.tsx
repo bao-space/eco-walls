@@ -4,12 +4,11 @@ import Logo from "../../assets/logo_ecowalls.png"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { useContext, useEffect, useState } from "react"
 import { ShoppingCartContext } from "../../context/ShoppingCartContext"
-import { Button, Navbar as Nav } from "flowbite-react"
+import { Navbar } from "flowbite-react"
 
-export function Navbar() {
+export function Nav() {
   const links = [
     { name: "Home", path: "/" },
-    { name: "Produto", path: "/" },
     { name: "Vendas", path: "/shop" },
     { name: "Serviços", path: "/services" },
     { name: "Sobre nós", path: "/about-us" },
@@ -29,70 +28,29 @@ export function Navbar() {
 
   return (
     <>
-      <div className="navbar-container">
-        <div className="links-container">
-          <div className="logo">
-            <img src={Logo} alt="logo" width="100px" />
-          </div>
-
-          <nav className="link-container">
-            {links.map((link) => (
-              <NavLink key={link.name} to={link.path}>
-                <p>{link.name}</p>
-              </NavLink>
-            ))}
-          </nav>
-
-          <div className="shop-cart-container">
+      <Navbar fluid={true} className="bg-white dark:bg-white sticky">
+        <Navbar.Brand>
+          <img src={Logo} className="mr-3 h-6 sm:h-9" alt="Eco wall logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          {links.map((link) => (
+            <NavLink
+              key={link.name}
+              to={link.path}
+              className="flex items-center justify-center link"
+            >
+              <p>{link.name}</p>
+            </NavLink>
+          ))}
+          <div className="flex items-center justify-center">
             <div className="shop-cart">
               <AiOutlineShoppingCart size={27} />
             </div>
             <p>Carrinho ({itemsInCart})</p>
           </div>
-        </div>
-      </div>
-      <div className="ghost-container" />
-      {/* <Nav>
-        <Nav.Brand href="https://flowbite-react.com">
-          <img
-            src="/favicon.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="Flowbite React Logo"
-          />
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-            Flowbite React
-          </span>
-
-          <div>
-            <div className="shop-cart-container">
-              <div className="shop-cart">
-                <AiOutlineShoppingCart size={27} />
-              </div>
-              <p>Carrinho ({itemsInCart})</p>
-            </div>
-          </div>
-        </Nav.Brand>
-        <div className="flex md:order-2">
-          <Button>Get started</Button>
-          <Nav.Toggle />
-        </div>
-        <Nav.Collapse>
-          <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-            {links.map((link) => (
-              <Nav.Link key={link.name} to={link.path}>
-                <li>
-                  <p
-                    aria-current="page"
-                    className="navlink block py-2 pl-3 pr-4 text-white md:p-0 "
-                  >
-                    {link.name}
-                  </p>
-                </li>
-              </Nav.Link>
-            ))}
-          </div>
-        </Nav.Collapse>
-      </Nav> */}
+        </Navbar.Collapse>
+      </Navbar>
 
       {/* <nav >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
