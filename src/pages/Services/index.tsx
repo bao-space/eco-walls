@@ -69,7 +69,7 @@ export function Services() {
           type="submit"
           className="text-white bg-green-500 hover:bg-green-600 focus:ring-2 focus:outline-none focus:ring-green-300 font-medium bg-none text-sm w-full sm:w-auto px-5 py-2.5 text-center mt-5"
         >
-          Submit
+          Enviar
         </button>
       </form>
       <div className="service-banner-container h-full w-1/2 flex items-center justify-center ">
