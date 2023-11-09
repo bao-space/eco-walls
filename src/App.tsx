@@ -6,7 +6,7 @@ import { ShoppingCartProvider } from "./context/ShoppingCartContext"
 function App() {
   return (
     <>
-      <BrowserRouter basename={import.meta.env.DEV ? "/" : "/eco-walls/"}>
+      <BrowserRouter basename="/eco-walls/">
         <ShoppingCartProvider>
           <Router />
         </ShoppingCartProvider>
