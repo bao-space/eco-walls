@@ -3,6 +3,7 @@
   max-width: var(--max-width);
   background: var(--grey-white);
   margin: 0 auto;
+  width: 90%;
 
   display: flex;
   align-items: center;
@@ -14,7 +15,6 @@
 
   margin-top: 100px;
   border-radius: 10px;
-  position: relative;
 }
 
 .service-container > form {
@@ -70,13 +70,28 @@ form > label {
 }
 
 .service-banner-container > p {
-  color: var(--grey-dark);
+  color: var(--grey-white);
 
   font-family: cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .service-container {
+    height: auto;
+    padding: 0 0 40px 0;
+    width: auto;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .service-banner-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }

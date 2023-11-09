@@ -94,3 +94,30 @@
   font-weight: 300;
   line-height: normal;
 }
+
+@media (max-width: 1000px) {
+  .mission-container {
+    text-align: center;
+  }
+
+  .mission-container > div {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+    width: calc(var(--max-width) - 30%);
+  }
+
+  .who-we-are {
+    height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+  }
+}

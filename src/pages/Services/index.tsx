@@ -73,10 +73,7 @@ export function Services() {
         </button>
       </form>
       <div className="service-banner-container h-full w-1/2 flex items-center justify-center ">
-        <p>
-          As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o
-          efeito do banho, por isso recomenda-se diariamente.
-        </p>
+        <p>Elevando a jardinagem a novas alturas.</p>
       </div>
     </section>
   )

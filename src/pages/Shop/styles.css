@@ -17,7 +17,7 @@
 }
 
 .shop-section > h2 {
-  color: var(--grey-dark);
+  color: var(--grey-white);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 3rem;
@@ -112,4 +112,21 @@
   margin: 0 auto;
 
   max-width: var(--max-width);
+}
+
+@media (max-width: 1000px) {
+  .shop-section {
+    height: auto;
+
+    margin: 0 auto;
+    text-align: center;
+
+    flex-direction: column;
+    padding: 90px 0;
+  }
+
+  .shop-option-container {
+    width: 90%;
+    height: 300px;
+  }
 }

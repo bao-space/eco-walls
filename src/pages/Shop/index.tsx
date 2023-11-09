@@ -132,8 +132,10 @@ export function Shop() {
               <option value="3" selected>
                 3
               </option>
-              {gardenStagesOptions.map((option) => (
-                <option value={option.id}>{option.stages}</option>
+              {gardenStagesOptions.map(({ id, stages }) => (
+                <option key={id} value={id}>
+                  {stages}
+                </option>
               ))}
             </select>
           </div>
