@@ -1,6 +1,8 @@
 .contact-container {
   border-top: 1px solid var(--grey-light);
+
   padding-top: 60px;
+
   height: 372px;
   display: flex;
   align-items: center;
@@ -30,7 +32,7 @@
 }
 
 .contact-us > h3 {
-  color: var(--grey-dark);
+  color: var(--secondary-color);
   font-family: Roboto;
   font-size: 30px;
   font-style: normal;
@@ -76,7 +78,7 @@
 }
 
 .about-company > h3 {
-  color: var(--grey-dark);
+  color: var(--secondary-color);
   font-family: Roboto;
   font-size: 38px;
   font-style: normal;
@@ -108,7 +110,7 @@
 }
 
 .owners > h3 {
-  color: var(--grey-dark);
+  color: var(--secondary-color);
   font-family: Roboto;
   font-size: 30px;
   font-style: normal;
@@ -166,4 +168,83 @@
   background: #dbe4de;
   transition: 0.3s;
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .contact-container {
+    height: auto;
+  }
+
+  .contact-items-container {
+    flex-direction: column;
+    display: grid;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "about-company"
+      "contact-us"
+      "owners";
+  }
+
+  .about-company {
+    width: 100%;
+
+    grid-area: about-company;
+    padding: 0 100px;
+    text-align: center;
+
+    margin: 0;
+  }
+
+  .media-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .owners {
+    height: auto;
+    width: auto;
+    grid-area: owners;
+
+    padding-right: 0;
+
+    text-align: center;
+    align-items: center;
+
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .contact-us {
+    height: auto;
+    width: auto;
+    grid-area: contact-us;
+
+    padding-right: 0;
+
+    text-align: center;
+    align-items: center;
+
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .owners > h3,
+  .contact-us > h3 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-company > p,
+  .owners > h4,
+  .contact-us > h4 {
+    font-size: 1rem;
+  }
+
+  .contact-us > h5 {
+    font-size: 0.875rem;
+  }
 }

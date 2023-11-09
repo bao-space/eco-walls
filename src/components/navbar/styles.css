@@ -101,3 +101,27 @@
   font-weight: 600;
   line-height: normal;
 }
+
+@media (max-width: 1000px) {
+  .navbar-container {
+    flex-direction: column;
+    padding: none;
+  }
+
+  .link-container > * {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .links-container {
+    width: 100%;
+    max-width: var(--max-width);
+    flex-direction: column;
+  }
+
+  .shop-cart-container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}

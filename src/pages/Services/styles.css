@@ -66,4 +66,17 @@ form > label {
   );
 
   background-size: cover;
+  padding: 40px 80px;
+}
+
+.service-banner-container > p {
+  color: var(--grey-dark);
+
+  font-family: cursive;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  text-align: center;
 }
