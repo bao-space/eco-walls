@@ -4,10 +4,12 @@ import Logo from "../../assets/logo_ecowalls.png"
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { useContext, useEffect, useState } from "react"
 import { ShoppingCartContext } from "../../context/ShoppingCartContext"
+import { Button, Navbar as Nav } from "flowbite-react"
 
 export function Navbar() {
   const links = [
     { name: "Home", path: "/" },
+    { name: "Produto", path: "/" },
     { name: "Vendas", path: "/shop" },
     { name: "Serviços", path: "/services" },
     { name: "Sobre nós", path: "/about-us" },
@@ -27,7 +29,72 @@ export function Navbar() {
 
   return (
     <>
-      <nav>
+      <div className="navbar-container">
+        <div className="links-container">
+          <div className="logo">
+            <img src={Logo} alt="logo" width="100px" />
+          </div>
+
+          <nav className="link-container">
+            {links.map((link) => (
+              <NavLink key={link.name} to={link.path}>
+                <p>{link.name}</p>
+              </NavLink>
+            ))}
+          </nav>
+
+          <div className="shop-cart-container">
+            <div className="shop-cart">
+              <AiOutlineShoppingCart size={27} />
+            </div>
+            <p>Carrinho ({itemsInCart})</p>
+          </div>
+        </div>
+      </div>
+      <div className="ghost-container" />
+      {/* <Nav>
+        <Nav.Brand href="https://flowbite-react.com">
+          <img
+            src="/favicon.svg"
+            className="mr-3 h-6 sm:h-9"
+            alt="Flowbite React Logo"
+          />
+          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+            Flowbite React
+          </span>
+
+          <div>
+            <div className="shop-cart-container">
+              <div className="shop-cart">
+                <AiOutlineShoppingCart size={27} />
+              </div>
+              <p>Carrinho ({itemsInCart})</p>
+            </div>
+          </div>
+        </Nav.Brand>
+        <div className="flex md:order-2">
+          <Button>Get started</Button>
+          <Nav.Toggle />
+        </div>
+        <Nav.Collapse>
+          <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+            {links.map((link) => (
+              <Nav.Link key={link.name} to={link.path}>
+                <li>
+                  <p
+                    aria-current="page"
+                    className="navlink block py-2 pl-3 pr-4 text-white md:p-0 "
+                  >
+                    {link.name}
+                  </p>
+                </li>
+              </Nav.Link>
+            ))}
+          </div>
+        </Nav.Collapse>
+      </Nav> */}
+
+      {/* <nav >
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a className="flex items-center">
             <img src={Logo} className="h-8 mr-3" alt="Eco Walls Logo" />
@@ -73,22 +140,11 @@ export function Navbar() {
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-              {links.map((link) => (
-                <NavLink key={link.name} to={link.path}>
-                  <li>
-                    <p
-                      aria-current="page"
-                      className="navlink block py-2 pl-3 pr-4 text-white md:p-0 "
-                    >
-                      {link.name}
-                    </p>
-                  </li>
-                </NavLink>
-              ))}
+             
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
   )
 }
